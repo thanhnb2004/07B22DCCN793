@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>Quan Ly Sieu Thi Dien May</display-name>
+
+    <servlet>
+        <servlet-name>MainCustomerViewServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.MainCustomerViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainCustomerViewServlet</servlet-name>
+        <url-pattern>/customer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterMemberServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.RegisterMemberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterMemberServlet</servlet-name>
+        <url-pattern>/register-member</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatusRegisterServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.StatusRegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatusRegisterServlet</servlet-name>
+        <url-pattern>/register/status</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WareHouseStaffViewServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.WareHouseStaffViewServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WareHouseStaffViewServlet</servlet-name>
+        <url-pattern>/warehouse</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListSupplierServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.ListSupplierServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListSupplierServlet</servlet-name>
+        <url-pattern>/suppliers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ImportInvoiceServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.ImportInvoiceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImportInvoiceServlet</servlet-name>
+        <url-pattern>/import</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddImportItemServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.AddImportItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddImportItemServlet</servlet-name>
+        <url-pattern>/import/add-item</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchItemServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.SearchItemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchItemServlet</servlet-name>
+        <url-pattern>/import/search-item</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StatusInvoiceServlet</servlet-name>
+        <servlet-class>com.supermarket.qlst.web.StatusInvoiceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StatusInvoiceServlet</servlet-name>
+        <url-pattern>/import/status</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
